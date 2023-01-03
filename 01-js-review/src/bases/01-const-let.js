@@ -6,13 +6,13 @@ let first_name_2 = 'Obi-Wan' // Temp var
 
 console.log(`Hello, ${first_name} ${last_name}`)
 
-if(true){
-    first_name_2 = 'Luke'
-    console.log(first_name_2)
-    const first_name_3 = 'Leia'
-    console.log(first_name_3)
+if (true){
+    firstName2 = 'Luke'
+    console.log(firstName2)
+    const firstName3 = 'Leia'
+    console.log(firstName3)
 }
 
 
 
-var first_name_3= 'Peter'
+var firstName3= 'Peter' // Don't use this
