@@ -1,5 +1,5 @@
-import './bases/01-const-let.js'
+// import './bases/01-const-let.js'
 // import './bases/02-template-string.js'
-
+import './bases/03-obj-literal.js'
 
 console.log('Bye')
