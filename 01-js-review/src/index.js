@@ -14,6 +14,7 @@
 // console.log(getHeroesByOwner('DC')) // Batman, Superman, Flash
 // console.log(getHeroesByOwner('Marvel')) // Spiderman, Wolverine
 
-import './bases/09-promises.js'
+// import './bases/09-promises.js'
+import './bases/10-args-in-promises.js'
 
 console.log('Bye')
