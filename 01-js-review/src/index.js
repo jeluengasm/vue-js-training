@@ -4,6 +4,7 @@
 // import './bases/04-arrays.js'
 // import './bases/05-functions.js'
 // import './bases/06-deconstructing-objects.js'
-import './bases/07-deconstructing-arrays.js'
+// import './bases/07-deconstructing-arrays.js'
+import './bases/08-imports-exports.js'
 
 console.log('Bye')

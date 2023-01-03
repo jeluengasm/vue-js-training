@@ -24,6 +24,9 @@ const heroes = [
         name: 'Wolverine',
         owner: 'Marvel'
     },
-];
+]
 
-const owners = ['DC','Marvel'];
+export const owners = ['DC','Marvel']
+console.log('heroes.js loaded') // This is a test to see if this file is loaded (Avoid this in production code)
+
+export default heroes
