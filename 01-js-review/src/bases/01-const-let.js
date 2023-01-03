@@ -1,10 +1,10 @@
 console.log('Hello, Jhon')
 
-const first_name = 'Han' // Constant
-const last_name = 'Solo'
-let first_name_2 = 'Obi-Wan' // Temp var
+const firstName = 'Han' // Constant
+const lastName = 'Solo'
+let firstName2 = 'Obi-Wan' // Temp var
 
-console.log(`Hello, ${first_name} ${last_name}`)
+console.log(`Hello, ${firstName} ${lastName}`)
 
 if (true){
     firstName2 = 'Luke'
