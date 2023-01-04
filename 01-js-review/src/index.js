@@ -19,6 +19,7 @@
 // import './bases/11-fetch-api.js'
 // import './bases/12-axios.js'
 // import './bases/13-async-await.js'
-import './bases/14-applied-async-await.js'
+// import './bases/14-applied-async-await.js'
+import './bases/15-ternary-null.js'
 
 console.log('Bye')
