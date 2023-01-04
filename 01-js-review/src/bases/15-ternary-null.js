@@ -14,4 +14,4 @@ let message = (isActive)? 'Active' : 'No active'
 //     message = 'Not active'
 // }
 
-console.log(message);
+console.log(message)
