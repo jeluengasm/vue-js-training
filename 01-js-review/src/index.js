@@ -15,6 +15,7 @@
 // console.log(getHeroesByOwner('Marvel')) // Spiderman, Wolverine
 
 // import './bases/09-promises.js'
-import './bases/10-args-in-promises.js'
+// import './bases/10-args-in-promises.js'
+import './bases/11-fetch-api.js'
 
 console.log('Bye')
