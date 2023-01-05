@@ -11,6 +11,10 @@
         <p>{{2 + 2}}</p>
         <p>{{ message }}</p>
         <blockquote>{{ author }}</blockquote>
+
+        <button v-on:click="changeAuthor" data-id="3">
+            Change author
+        </button>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="app.js"></script>
