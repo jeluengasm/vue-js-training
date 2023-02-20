@@ -1,5 +1,5 @@
 <template>
-    <h2> Counter </h2>
+    <h2> {{ customTitle }} </h2>
     <p>{{ counter }}</p>
     <div>
         <span>
@@ -13,7 +13,9 @@
 
 <script>
 export default {
-    name: 'Counter',
+    props: {
+        bookTitle: String
+    },
     data() {
         return {
         counter: 0
@@ -25,6 +27,11 @@ export default {
         },
         decreaseButton() {
             this.counter--;
+        }
+    },
+    computed: {
+        customTitle() {
+            return this.bookTitle || 'Counter';
         }
     }
 }
