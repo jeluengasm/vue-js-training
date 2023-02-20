@@ -17,8 +17,12 @@ export default {
         bookTitle: String,
         start: {
             type: Number,
-            required: true
-        }
+            required: true,
+            default: 100,
+            validator(value) {
+                return value >= 100
+            }
+        },
     },
     data() {
         return {
