@@ -1,8 +1,8 @@
 <template>
     <img alt="Vue logo" src="./assets/logo.png">
-    <Counter book-title="Entered"/>
-    <Counter book-title="Exited"/>
-    <Counter />
+    <Counter :start="1" book-title="Entered"/>
+    <Counter :start="4" book-title="Exited"/>
+    <Counter :start="5"/>
 
 </template>
 

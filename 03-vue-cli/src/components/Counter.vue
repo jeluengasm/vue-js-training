@@ -14,11 +14,15 @@
 <script>
 export default {
     props: {
-        bookTitle: String
+        bookTitle: String,
+        start: {
+            type: Number,
+            required: true
+        }
     },
     data() {
         return {
-        counter: 0
+            counter: this.start
         }
     },
     methods: {
