@@ -1,11 +1,12 @@
 <template>
     <img alt="Vue logo" src="./assets/logo.png">
-    <Counter :start="100" book-title="Entered"/>
+    <Counter v-bind:start="10*10" book-title="Entered"/>
+    <Counter :start="10" book-title="Entered 2"/> <!-- Same as v-bind:start -->
 
 </template>
 
 <script>
-import Counter from './components/Counter.vue';
+import Counter from '@/components/Counter.vue';
 
 export default {
     name: 'App',

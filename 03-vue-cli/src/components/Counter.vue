@@ -3,7 +3,7 @@
     <p>{{ counter }}</p>
     <div>
         <span>
-            <button @click="increaseButton">+ 1</button> <!-- Same that v-on:click -->
+            <button @click="increaseButton">+ 1</button> <!-- Same as v-on:click -->
         </span>
         <span>
             <button @click="decreaseButton">- 1</button>
@@ -20,7 +20,7 @@ export default {
             required: true,
             default: 100,
             validator(value) {
-                return value >= 100
+                return value > 9
             }
         },
     },
