@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter component Must be match with snapshot 1`] = `
+<h2>Counter</h2>
+<p>100</p>
+<div><span><button>+ 1</button><!-- Same as v-on:click --></span><span><button>- 1</button></span></div>
+`;
