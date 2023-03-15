@@ -22,4 +22,23 @@ describe('Counter component', () => {
         expect(value.exists()).toBeTruthy()
         expect(value.text()).toBe('100')
     })
+
+    test('Must increase the counter in 1', async () => {
+        const wrapper = shallowMount(Counter)
+        
+        const increaseBtn = wrapper.findAll('button')[0]
+        await increaseBtn.trigger('click')
+        const value = wrapper.find('[data-testid="counter"]')
+
+        expect(value.text()).toBe('101')
+
+        const decreaseBtn = wrapper.findAll('button')[1]
+        await decreaseBtn.trigger('click')
+        await decreaseBtn.trigger('click')
+
+        expect(value.text()).toBe('99')
+
+
+        
+    })
 })
