@@ -4,7 +4,7 @@ import Counter from '@/components/Counter.vue'
 describe('Counter component', () => {
     let wrapper, value
 
-    // Clean the wrapper after each test
+    // Clean the wrapper/value after each test
     beforeEach(() => {
         wrapper = shallowMount(Counter)
         value = wrapper.find('[data-testid="counter"]')
