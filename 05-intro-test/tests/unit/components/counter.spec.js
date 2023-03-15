@@ -44,4 +44,16 @@ describe('Counter component', () => {
         expect(start.required).toBeTruthy()
         expect(start.default).toBe(Number(value.text()))
     })
+
+    test('Must be let declared the props', () => {
+        const bookTitle = 'My Counter'
+        wrapper = shallowMount(Counter, {
+            props: {
+                bookTitle,
+                start: '200'
+            }
+        })
+        expect(wrapper.props('bookTitle')).toBe(bookTitle)
+        expect(wrapper.find('h2').text()).toBe(bookTitle)
+    })
 })
