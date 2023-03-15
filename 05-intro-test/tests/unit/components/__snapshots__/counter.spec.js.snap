@@ -2,6 +2,6 @@
 
 exports[`Counter component Must be match with snapshot 1`] = `
 <h2>Counter</h2>
-<p>100</p>
+<p data-testid="counter">100</p>
 <div><span><button>+ 1</button><!-- Same as v-on:click --></span><span><button>- 1</button></span></div>
 `;

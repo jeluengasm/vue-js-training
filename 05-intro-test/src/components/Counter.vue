@@ -1,6 +1,6 @@
 <template>
     <h2> {{ customTitle }} </h2>
-    <p>{{ counter }}</p>
+    <p data-testid="counter">{{ counter }}</p>
     <div>
         <span>
             <button @click="increaseButton">+ 1</button> <!-- Same as v-on:click -->

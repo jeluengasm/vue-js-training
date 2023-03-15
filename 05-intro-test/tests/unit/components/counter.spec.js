@@ -7,10 +7,19 @@ describe('Counter component', () => {
 
         expect(wrapper.html()).toMatchSnapshot()
     })
+
     test('h2 must has the default value "Counter"', () => {
         const wrapper = shallowMount(Counter)
         const h2 = wrapper.find('h2')
         expect(h2.exists()).toBeTruthy()
         expect(h2.text()).toBe('Counter')
+    })
+
+    test('The counter starts at 100', () => {
+        const wrapper = shallowMount(Counter)
+        const value = wrapper.find('[data-testid="counter"]')
+        
+        expect(value.exists()).toBeTruthy()
+        expect(value.text()).toBe('100')
     })
 })
