@@ -25,7 +25,7 @@ describe('Counter component', () => {
         expect(value.text()).toBe('100')
     })
 
-    test('Must increase the counter in 1', async () => {
+    test('Must change the counter value when the buttons are clicked', async () => {
         const [increaseBtn, decreaseBtn] = wrapper.findAll('button')
         await increaseBtn.trigger('click')
         await increaseBtn.trigger('click')
@@ -34,5 +34,14 @@ describe('Counter component', () => {
         await decreaseBtn.trigger('click')
 
         expect(value.text()).toBe('101')
+    })
+
+    test('Must be declared a default value', () => {
+        const { start } = Counter.props
+        expect(start).toBeTruthy()
+        expect(start.type).toBe(Number)
+        expect(start.default).toBe(100)
+        expect(start.required).toBeTruthy()
+        expect(start.default).toBe(Number(value.text()))
     })
 })
